@@ -18,7 +18,7 @@ namespace DatingApp.API.Data
 
 protected override void OnConfiguring(DbContextOptionsBuilder builder)
 {
-    builder.UseSqlServer("Server=DESKTOP-804RGNJ\\SQLEXPRESS01;Database=DatingApp; user id =sa; password= 123; Trusted_Connection=True;MultipleActiveResultSets=true");
+    builder.UseSqlServer("ConnectionString");
     base.OnConfiguring(builder);
 }
         protected override void OnModelCreating(ModelBuilder builder)
